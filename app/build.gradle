@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.atom.splash.vediosplashtest"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'//ConverterFactory的String依赖包
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar'//菜单栏
+    compile 'com.jakewharton:butterknife:8.0.1'//view注解
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+}

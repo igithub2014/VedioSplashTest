@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/exam"
+            android:title="真题试卷"
+            android:icon="@drawable/exam_icon"/>
+        <item android:id="@+id/everyday_test"
+            android:title="每日一题"
+            android:icon="@drawable/day_exam_icon"/>
+        <item android:id="@+id/month_exam"
+            android:title="每月一测"
+            android:icon="@drawable/month_exam_icon"/>
+        <item android:id="@+id/error_practice"
+        android:title="错题练习"
+        android:icon="@drawable/error_practice_icon"/>
+        <item android:id="@+id/history_practice"
+        android:title="练习历史"
+        android:icon="@drawable/practice_icon"/>
+        <item android:id="@+id/browser"
+        android:title="错题浏览"
+        android:icon="@drawable/error_problem_icon"/>
+        <item android:id="@+id/favor"
+        android:title="收藏题目"
+        android:icon="@drawable/favorites_icon"/>
+    </group>
+</menu>

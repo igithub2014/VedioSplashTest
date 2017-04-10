@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fast_userLogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eidttext_common_height50"
+        android:layout_marginLeft="@dimen/activity_common_margin10"
+        android:layout_marginRight="@dimen/activity_common_margin10"
+        android:layout_marginTop="@dimen/activity_common_margin10"
+        android:background="@drawable/ic_login_box_input">
+
+        <ImageView
+            android:id="@+id/fast_login_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_common_margin10"
+            android:src="@drawable/ic_login_ico_user" />
+
+        <EditText
+            android:id="@+id/fast_userName_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eidttext_common_height30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_common_margin10"
+            android:layout_toRightOf="@+id/fast_login_icon"
+            android:background="@color/text_common_color"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="@string/hint_phoneNum_txt"
+            android:singleLine="true"
+            android:textColor="@color/bar"
+            android:textColorHint="@color/bar"
+            android:textSize="@dimen/word15" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fast_errorUser_tap_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_userLogin_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_common_margin20"
+        android:layout_marginTop="@dimen/activity_common_margin10"
+        android:text="cdadlad"
+        android:textColor="@color/text_unfocus"
+        android:textSize="@dimen/word12"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/fast_verity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_errorUser_tap_txt"
+        android:layout_marginTop="@dimen/activity_common_margin10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eidttext_common_height50"
+            android:layout_marginLeft="@dimen/activity_common_margin10"
+            android:layout_marginRight="@dimen/activity_common_margin120"
+            android:background="@drawable/ic_login_box_input">
+
+            <ImageView
+                android:id="@+id/fast_verity_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/activity_common_margin10"
+                android:src="@drawable/ic_login_ico_password" />
+
+            <EditText
+                android:id="@+id/fast_verity_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/eidttext_common_height30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_common_margin10"
+                android:layout_toRightOf="@+id/fast_verity_icon"
+                android:background="@color/text_common_color"
+                android:maxLength="4"
+                android:hint="@string/hint_verity_txt"
+                android:singleLine="true"
+                android:textColor="@color/bar"
+                android:textColorHint="@color/bar"
+                android:textSize="@dimen/word15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/verity_img"
+            android:layout_width="@dimen/vertity_img_width100"
+            android:layout_height="@dimen/vertity_img_height50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_common_margin10" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fast_verity_tap_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_verity_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_common_margin20"
+        android:layout_marginTop="@dimen/activity_common_margin10"
+        android:text="cdadlad"
+        android:textColor="@color/text_unfocus"
+        android:textSize="@dimen/word12"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/fast_psd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_verity_tap_txt"
+        android:layout_marginTop="@dimen/activity_common_margin10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eidttext_common_height50"
+            android:layout_marginLeft="@dimen/activity_common_margin10"
+            android:layout_marginRight="@dimen/activity_common_margin120"
+            android:background="@drawable/ic_login_box_input">
+
+            <ImageView
+                android:id="@+id/fast_password_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/activity_common_margin10"
+                android:src="@drawable/ic_login_ico_password" />
+
+            <EditText
+                android:id="@+id/fast_passWord_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/eidttext_common_height30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_common_margin10"
+                android:layout_toRightOf="@+id/fast_password_icon"
+                android:background="@color/text_common_color"
+                android:inputType="number"
+                android:ems="6"
+                android:maxLength="6"
+                android:hint="@string/hint_phone_txt"
+                android:singleLine="true"
+                android:textColor="@color/bar"
+                android:textColorHint="@color/bar"
+                android:textSize="@dimen/word15" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/verity_imgButton"
+            android:layout_width="@dimen/vertity_img_width100"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_common_margin10"
+            android:background="#dcdcdc"
+            android:clickable="false"
+            android:text="@string/fast_verity_txt"
+            android:textSize="@dimen/word15"
+            android:textColor="@color/text_unfocus"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fast_errorPsd_tap_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_psd_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_common_margin20"
+        android:layout_marginTop="@dimen/activity_common_margin10"
+        android:text="cdadlad"
+        android:textColor="@color/text_unfocus"
+        android:textSize="@dimen/word12"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/fast_loginBtn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast_errorPsd_tap_txt">
+
+        <Button
+            android:id="@+id/fast_login_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_header_height"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_common_margin20"
+            android:background="@drawable/login_button_bg"
+            android:text="@string/login_txt"
+            android:textColor="@color/text_unfocus"
+            android:textSize="@dimen/word15" />
+    </RelativeLayout>
+</RelativeLayout>

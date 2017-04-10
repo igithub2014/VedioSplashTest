@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/sf3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="57dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/line"
+                android:background="@drawable/register_bg"
+                android:text="新用户注册"/>
+            <Button
+                android:id="@+id/joinin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/line"
+                android:background="@drawable/register_bg"
+                android:textSize="20sp"
+                android:text="直接登录"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

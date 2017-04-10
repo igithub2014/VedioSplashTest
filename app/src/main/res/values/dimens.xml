@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_header_height">45dp</dimen>
+    <dimen name="common_dp">10dp</dimen>
+    <dimen name="title_txt_size">18sp</dimen>
+    <dimen name="activity_common_margin2">2dp</dimen>
+    <dimen name="activity_common_margin5">5dp</dimen>
+    <dimen name="activity_common_margin10">10dp</dimen>
+    <dimen name="activity_common_margin20">20dp</dimen>
+    <dimen name="activity_common_margin120">120dp</dimen>
+    <dimen name="eidttext_common_height30">30dp</dimen>
+    <dimen name="eidttext_common_height50">50dp</dimen>
+    <dimen name="vertity_img_width100">100dp</dimen>
+    <dimen name="vertity_img_height50">50dp</dimen>
+    <dimen name="line">0.5dp</dimen>
+    <dimen name="word10">10sp</dimen>
+    <dimen name="word11">11sp</dimen>
+    <dimen name="word12">12sp</dimen>
+    <dimen name="word13">13sp</dimen>
+    <dimen name="word14">14sp</dimen>
+    <dimen name="word15">15sp</dimen>
+    <dimen name="word16">16sp</dimen>
+    <dimen name="word17">17sp</dimen>
+    <dimen name="word18">18sp</dimen>
+    <dimen name="word20">20sp</dimen>
+    <dimen name="word22">22sp</dimen>
+    <dimen name="word26">26sp</dimen>
+    <dimen name="word28">28sp</dimen>
+    <dimen name="word30">30sp</dimen>
+</resources>

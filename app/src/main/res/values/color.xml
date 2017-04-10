@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name = "bar">#485D62</color>
+    <color name="colorPrimaryDark">#485D62</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="text_focus">#29CCD8</color>
+    <color name="text_unfocus">#ffffff</color>
+    <color name="text_common_color">#ffffff</color>
+    <color name="toast_white">#ffffff</color>
+    <color name="toast_stroke_gray">#99d4d4d4</color>
+    <color name="black">#FF000000</color>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 设置bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--&lt;!&ndash; Toolbar 弹出菜单样式  &ndash;&gt;-->
+    <!--<style name="ToolbarPopTheme" parent="@style/ThemeOverlay.AppCompat.Light">-->
+        <!--<item name="android:actionOverflowMenuStyle"> @style/OverflowMenuStyle</item>-->
+    <!--</style>-->
+    <!--<style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">-->
+        <!--&lt;!&ndash;把该属性改为false即可使menu位置位于toolbar之下&ndash;&gt;-->
+        <!--<item name="overlapAnchor">false</item>-->
+    <!--</style>-->
+
+    <style name="popAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="common_set">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+</resources>

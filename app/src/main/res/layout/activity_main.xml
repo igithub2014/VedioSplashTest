@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#485D62"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab_menu_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_menu_bg"
+                        android:drawableTop="@drawable/tab_menu_home"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:text="首页"
+                        android:textColor="@drawable/tab_menu_home_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_find"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_menu_bg"
+                        android:drawableTop="@drawable/tab_menu_find"
+                        android:gravity="center"
+                        android:text="发现"
+                        android:textColor="@drawable/tab_menu_home_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_user"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_menu_bg"
+                        android:drawableTop="@drawable/tab_mune_person"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textColor="@drawable/tab_menu_home_txt" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/tab_menu_layout"
+                    android:background="#485D62" />
+
+                <FrameLayout
+                    android:id="@+id/frame_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tab_menu_layout"></FrameLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/sliding_content_view"
+            app:menu="@menu/main_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

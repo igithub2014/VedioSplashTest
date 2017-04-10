@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">  <!-- 设置按钮形状为矩形-->
+    <!--背景色填充-->
+    <solid android:color="#00000000"/>
+    <!--填充外边框颜色-->
+    <stroke android:color="#11100000"
+        android:width="1dp"/>
+    <corners android:radius="5dp"/>
+    <padding android:left="5dp"
+        android:right="5dp"
+        android:top="5dp"
+        android:bottom="5dp"/>
+</shape>
